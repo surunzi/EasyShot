@@ -1,0 +1,51 @@
+.container {
+    margin-top: 60px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.nav {
+    display: block;
+    margin: 0 auto;
+    width: 960px;
+}
+
+.nav-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.nav li {
+    color: #fff;
+    display: inline-block;
+    background-color: #27ae60;
+    padding: 10px;
+    padding-top: 15px;
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    top: -12px;
+    float: left;
+    margin-right: 15px;
+    -webkit-transition: top 0.3s, background-color 0.3s, -webkit-transform 0.3s;
+       -moz-transition: top 0.3s, background-color 0.3s, -webkit-transform 0.3s;
+        -ms-transition: top 0.3s, background-color 0.3s, -webkit-transform 0.3s;
+}
+
+.nav .disabled {
+    background-color: #ccc;
+}
+
+.nav .disabled:hover {
+    top: -12px;
+    background-color: #ccc;
+}
+
+.nav li:hover {
+    top: 0;
+    background-color: #1d9650;
+}
