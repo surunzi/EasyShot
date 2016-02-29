@@ -59,11 +59,11 @@ var screenshot = {
             if ($help.hasClass('hidden')) {
                 $('#help').removeClass('hidden');
                 screenshot.$canvas.addClass('hidden');
-                screenshot.$helpBtn.text('画布');
+                screenshot.$helpBtn.text('Canvas');
             } else {
                 $('#help').addClass('hidden');
                 screenshot.$canvas.removeClass('hidden');
-                screenshot.$helpBtn.text('帮助');
+                screenshot.$helpBtn.text('Help');
             }
         });
     },
@@ -88,7 +88,7 @@ var screenshot = {
                     screenshot.$canvas.removeClass('hidden');
                     $('#help').addClass('hidden');
                     screenshot.$downloadBtn.removeClass('disabled');
-                    screenshot.$helpBtn.text('帮助');
+                    screenshot.$helpBtn.text('Help');
                     pasteFF.innerHTML = '';
                 }
             },false);
@@ -173,7 +173,7 @@ var screenshot = {
                 this.$canvas.removeClass('hidden');
                 $('#help').addClass('hidden');
                 this.$downloadBtn.removeClass('disabled');
-                this.$helpBtn.text('帮助');
+                this.$helpBtn.text('Help');
                 this.reader.readAsDataURL(blob);
             }
         }
